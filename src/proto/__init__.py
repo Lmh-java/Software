@@ -1,0 +1,237 @@
+from .sensor_msg_pb2 import SensorProto
+from .play_info_msg_pb2 import PlayInfo
+from .ssl_gc_change_pb2 import StateChange, Change
+from .play_pb2 import PlayName, Play
+from .ssl_gc_referee_message_pb2 import Referee, GameEventProposalGroup, MatchType
+from .robot_log_msg_pb2 import LogLevel, RobotLog
+from .ssl_vision_wrapper_pb2 import SSL_WrapperPacket
+from .world_pb2 import Field, World, FieldType, WorldState, WorldStateReceivedTrigger, SimulatorTick, SimulationState, Pass, Shot, EnemyThreat
+from .ssl_vision_detection_pb2 import SSL_DetectionBall, SSL_DetectionRobot, SSL_DetectionFrame
+from .ball_pb2 import Ball
+from .vision_pb2 import RobotState, BallState
+from .visualization_pb2 import PathVisualization, NamedValue, PlotJugglerValue, PassWithRating, PassVisualization, AttackerVisualization, BallPlacementVisualization, CostVisualization, Obstacle, ObstacleList, VirtualObstacles, Shape, DebugShapes
+from .tbots_timestamp_msg_pb2 import Timestamp
+from .parameters_pb2 import ParameterRangeOptions, ThunderbotsConfig, AiConfig, AiControlConfig, AiParameterConfig, AttackerTacticConfig, ReceiverTacticConfig, FreeKickPlayConfig, PassingConfig, ReceiverPositionGeneratorConfig, GoalieTacticConfig, DribbleTacticConfig, EnemyCapabilityConfig, ShootOrPassPlayConfig, RobotCapabilitiesConfig, SensorFusionConfig, EnemyBallPlacementPlayConfig, DefensePlayConfig, RobotNavigationObstacleConfig, CostVisualizationConfig, PassGeneratorVisualizationConfig, ReceiverPositionGeneratorVisualizationConfig, PossessionTrackerConfig, NetworkConfig, CreaseDefenderConfig, PassDefenderConfig, DefenderStealConfig
+from .ip_notification_pb2 import IpNotification
+from .ssl_gc_state_pb2 import YellowCard, RedCard, Foul, Command, GameState, Proposal, ProposalGroup, TeamInfo, State, ShootoutState
+from .ssl_gc_engine_pb2 import GcState, GcStateTeam, TeamAdvantageChoice, GcStateAutoRef, GcStateTracker, Ball, Robot, ContinueAction, ContinueHint
+from .tactic_pb2 import AssignedTacticPlayControlParams, Tactic, AttackerTactic, ChipTactic, CreaseDefenderAlignment, BallStealMode, CreaseDefenderTactic, DribbleTactic, GetBehindBallTactic, GoalieTactic, KickTactic, MoveGoalieToGoalLineTactic, MoveTactic, PassDefenderTactic, PenaltyKickTactic, PivotKickTactic, ReceiverTactic, ShadowEnemyTactic, HaltTactic
+from .tbots_software_msgs_pb2 import PrimitiveSet
+from .validation_pb2 import ValidationStatus, ValidationType, ValidationGeometry, ValidationProto, ValidationProtoSet
+from .robot_statistic_pb2 import RobotStatistic
+from .team_pb2 import Robot, Team
+from .power_frame_msg_pb2 import PowerPulseControl, PowerFrame
+from .ssl_gc_game_event_pb2 import GameEvent
+from .ssl_gc_common_pb2 import Team, RobotId, Division
+from .replay_bookmark_pb2 import ReplayBookmark
+from .ssl_autoref_ci_pb2 import AutoRefCiInput, AutoRefCiOutput
+from .game_state_pb2 import GameState
+from .ssl_vision_geometry_pb2 import Vector2f, SSL_FieldLineSegment, SSL_FieldCircularArc, SSL_GeometryFieldSize, SSL_GeometryCameraCalibration, SSL_BallModelStraightTwoPhase, SSL_BallModelChipFixedLoss, SSL_GeometryModels, SSL_GeometryData, SSL_FieldShapeType
+from .geneva_slot_pb2 import Slot
+from .ssl_vision_wrapper_tracked_pb2 import TrackerWrapperPacket
+from .ssl_gc_ci_pb2 import CiInput, CiOutput
+from .robot_status_msg_pb2 import RobotStatus, PrimitiveExecutorStatus, ThunderloopStatus, JetsonStatus, ChipperKickerStatus, DribblerStatus, ErrorCode, MotorFault, DriveUnit, MotorStatus, NetworkStatus, PowerStatus
+from .ssl_gc_geometry_pb2 import Vector2, Vector3
+from .geometry_pb2 import Point, Path, Vector, Angle, AngularVelocity, Polygon, Circle, Segment, Stadium
+from .estop_state_pb2 import EstopState
+from .ssl_gc_api_pb2 import Output, Protocol, ProtocolEntry, Input
+from .manual_gc_command_pb2 import ManualGCCommand
+from .robot_crash_msg_pb2 import RobotCrash
+from .ssl_vision_detection_tracked_pb2 import Capability, TrackedBall, KickedBall, TrackedRobot, TrackedFrame
+from .ssl_gc_engine_config_pb2 import Config, AutoRefConfig
+from .primitive_pb2 import BallCollisionType, ObstacleAvoidanceMode, MotionConstraint, DribblerMode, MaxAllowedSpeedMode, AutoChipOrKick, PowerControl, Primitive, MovePrimitive, StopPrimitive, TrajectoryPathParams2D, TrajectoryParamsAngular1D, MotorControl, DirectControlPrimitive
+
+__all__ = [
+    "SensorProto",
+    "PlayInfo",
+    "StateChange",
+    "Change",
+    "PlayName",
+    "Play",
+    "Referee",
+    "GameEventProposalGroup",
+    "MatchType",
+    "LogLevel",
+    "RobotLog",
+    "SSL_WrapperPacket",
+    "Field",
+    "World",
+    "FieldType",
+    "WorldState",
+    "WorldStateReceivedTrigger",
+    "SimulatorTick",
+    "SimulationState",
+    "Pass",
+    "Shot",
+    "EnemyThreat",
+    "SSL_DetectionBall",
+    "SSL_DetectionRobot",
+    "SSL_DetectionFrame",
+    "Ball",
+    "RobotState",
+    "BallState",
+    "PathVisualization",
+    "NamedValue",
+    "PlotJugglerValue",
+    "PassWithRating",
+    "PassVisualization",
+    "AttackerVisualization",
+    "BallPlacementVisualization",
+    "CostVisualization",
+    "Obstacle",
+    "ObstacleList",
+    "VirtualObstacles",
+    "Shape",
+    "DebugShapes",
+    "Timestamp",
+    "ParameterRangeOptions",
+    "ThunderbotsConfig",
+    "AiConfig",
+    "AiControlConfig",
+    "AiParameterConfig",
+    "AttackerTacticConfig",
+    "ReceiverTacticConfig",
+    "FreeKickPlayConfig",
+    "PassingConfig",
+    "ReceiverPositionGeneratorConfig",
+    "GoalieTacticConfig",
+    "DribbleTacticConfig",
+    "EnemyCapabilityConfig",
+    "ShootOrPassPlayConfig",
+    "RobotCapabilitiesConfig",
+    "SensorFusionConfig",
+    "EnemyBallPlacementPlayConfig",
+    "DefensePlayConfig",
+    "RobotNavigationObstacleConfig",
+    "CostVisualizationConfig",
+    "PassGeneratorVisualizationConfig",
+    "ReceiverPositionGeneratorVisualizationConfig",
+    "PossessionTrackerConfig",
+    "NetworkConfig",
+    "CreaseDefenderConfig",
+    "PassDefenderConfig",
+    "DefenderStealConfig",
+    "IpNotification",
+    "YellowCard",
+    "RedCard",
+    "Foul",
+    "Command",
+    "GameState",
+    "Proposal",
+    "ProposalGroup",
+    "TeamInfo",
+    "State",
+    "ShootoutState",
+    "GcState",
+    "GcStateTeam",
+    "TeamAdvantageChoice",
+    "GcStateAutoRef",
+    "GcStateTracker",
+    "Ball",
+    "Robot",
+    "ContinueAction",
+    "ContinueHint",
+    "AssignedTacticPlayControlParams",
+    "Tactic",
+    "AttackerTactic",
+    "ChipTactic",
+    "CreaseDefenderAlignment",
+    "BallStealMode",
+    "CreaseDefenderTactic",
+    "DribbleTactic",
+    "GetBehindBallTactic",
+    "GoalieTactic",
+    "KickTactic",
+    "MoveGoalieToGoalLineTactic",
+    "MoveTactic",
+    "PassDefenderTactic",
+    "PenaltyKickTactic",
+    "PivotKickTactic",
+    "ReceiverTactic",
+    "ShadowEnemyTactic",
+    "HaltTactic",
+    "PrimitiveSet",
+    "ValidationStatus",
+    "ValidationType",
+    "ValidationGeometry",
+    "ValidationProto",
+    "ValidationProtoSet",
+    "RobotStatistic",
+    "Robot",
+    "Team",
+    "PowerPulseControl",
+    "PowerFrame",
+    "GameEvent",
+    "Team",
+    "RobotId",
+    "Division",
+    "ReplayBookmark",
+    "AutoRefCiInput",
+    "AutoRefCiOutput",
+    "GameState",
+    "Vector2f",
+    "SSL_FieldLineSegment",
+    "SSL_FieldCircularArc",
+    "SSL_GeometryFieldSize",
+    "SSL_GeometryCameraCalibration",
+    "SSL_BallModelStraightTwoPhase",
+    "SSL_BallModelChipFixedLoss",
+    "SSL_GeometryModels",
+    "SSL_GeometryData",
+    "SSL_FieldShapeType",
+    "Slot",
+    "TrackerWrapperPacket",
+    "CiInput",
+    "CiOutput",
+    "RobotStatus",
+    "PrimitiveExecutorStatus",
+    "ThunderloopStatus",
+    "JetsonStatus",
+    "ChipperKickerStatus",
+    "DribblerStatus",
+    "ErrorCode",
+    "MotorFault",
+    "DriveUnit",
+    "MotorStatus",
+    "NetworkStatus",
+    "PowerStatus",
+    "Vector2",
+    "Vector3",
+    "Point",
+    "Path",
+    "Vector",
+    "Angle",
+    "AngularVelocity",
+    "Polygon",
+    "Circle",
+    "Segment",
+    "Stadium",
+    "EstopState",
+    "Output",
+    "Protocol",
+    "ProtocolEntry",
+    "Input",
+    "ManualGCCommand",
+    "RobotCrash",
+    "Capability",
+    "TrackedBall",
+    "KickedBall",
+    "TrackedRobot",
+    "TrackedFrame",
+    "Config",
+    "AutoRefConfig",
+    "BallCollisionType",
+    "ObstacleAvoidanceMode",
+    "MotionConstraint",
+    "DribblerMode",
+    "MaxAllowedSpeedMode",
+    "AutoChipOrKick",
+    "PowerControl",
+    "Primitive",
+    "MovePrimitive",
+    "StopPrimitive",
+    "TrajectoryPathParams2D",
+    "TrajectoryParamsAngular1D",
+    "MotorControl",
+    "DirectControlPrimitive"
+]

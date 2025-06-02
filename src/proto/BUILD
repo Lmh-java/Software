@@ -6,6 +6,15 @@ load("@protobuf//bazel:py_proto_library.bzl", "py_proto_library")
 
 package(default_visibility = ["//visibility:public"])
 
+py_library(
+    name = "import_all_protos",
+    srcs = ["__init__.py"],
+    deps = [
+        ":software_py_proto",
+        ":tbots_py_proto",
+    ],
+)
+
 proto_library(
     name = "geneva_proto",
     srcs = [
@@ -257,13 +266,13 @@ py_proto_library(
     ],
 )
 
-py_library(
-    name = "import_all_protos",
-    srcs = [
-        "import_all_protos.py",
-    ],
-    deps = [
-        ":software_py_proto",
-        ":tbots_py_proto",
-    ],
-)
+# py_library(
+#     name = "import_all_protos",
+#     srcs = [
+#         "import_all_protos.py",
+#     ],
+#     deps = [
+#         ":software_py_proto",
+#         ":tbots_py_proto",
+#     ],
+# )
