@@ -3,7 +3,7 @@ from typing import Callable, NoReturn, TYPE_CHECKING
 if TYPE_CHECKING:
     from software.thunderscope.thunderscope import Thunderscope
 
-from proto.import_all_protos import *
+from proto import *
 from proto.message_translation import tbots_protobuf
 from software.py_constants import SECONDS_PER_MILLISECOND
 from software.thunderscope.constants import ProtoUnixIOTypes

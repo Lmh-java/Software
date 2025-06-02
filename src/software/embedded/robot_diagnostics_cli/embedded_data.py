@@ -1,7 +1,7 @@
 import math
 import redis
 from software.py_constants import *
-from proto.import_all_protos import *
+from proto import *
 from software.embedded.constants.py_constants import (
     ROBOT_MAX_ANG_SPEED_RAD_PER_S,
     ROBOT_MAX_SPEED_M_PER_S,

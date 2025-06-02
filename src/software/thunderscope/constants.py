@@ -1,6 +1,6 @@
 from pyqtgraph.Qt import QtGui
 from OpenGL.GL import *
-from proto.import_all_protos import *
+from proto import *
 from enum import Enum, IntEnum
 from proto.robot_log_msg_pb2 import LogLevel
 

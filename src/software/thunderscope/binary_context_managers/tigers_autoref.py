@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from proto.import_all_protos import *
+from proto import *
 from proto.ssl_gc_common_pb2 import Team as SslTeam
 from software.networking.ssl_proto_communication import (
     SslSocketProtoParseException,

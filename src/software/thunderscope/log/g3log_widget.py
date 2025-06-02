@@ -3,7 +3,7 @@ import queue
 from software.py_constants import *
 import pyqtgraph.console as pg_console
 from proto.robot_log_msg_pb2 import RobotLog, LogLevel
-from proto.import_all_protos import *
+from proto import *
 
 import software.thunderscope.constants as constants
 from software.thunderscope.log.g3log_checkboxes import g3logCheckboxes

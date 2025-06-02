@@ -1,6 +1,6 @@
 from pyqtgraph.Qt.QtCore import Qt
 from pyqtgraph.Qt.QtWidgets import *
-from proto.import_all_protos import *
+from proto import *
 
 import software.python_bindings as tbots_cpp
 

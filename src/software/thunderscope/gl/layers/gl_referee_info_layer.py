@@ -4,7 +4,7 @@ from PyQt6 import QtGui
 from google.protobuf.json_format import MessageToDict
 from pyqtgraph.opengl.items.GLTextItem import GLTextItem
 
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 import software.python_bindings as tbots_cpp
 from software.thunderscope.constants import (

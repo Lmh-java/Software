@@ -1,6 +1,6 @@
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph import parametertree
-from proto.import_all_protos import *
+from proto import *
 from software.thunderscope.common import proto_parameter_tree_util
 from google.protobuf.message import Message
 

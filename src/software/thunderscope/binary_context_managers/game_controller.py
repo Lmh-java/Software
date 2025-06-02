@@ -8,7 +8,7 @@ import time
 from subprocess import Popen
 from typing import Any
 
-from proto.import_all_protos import *
+from proto import *
 from proto.ssl_gc_common_pb2 import Team as SslTeam
 from software.networking.ssl_proto_communication import *
 import software.python_bindings as tbots_cpp

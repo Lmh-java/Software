@@ -1,4 +1,4 @@
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 from software.thunderscope.constants import SPEED_SEGMENT_SCALE
 import math

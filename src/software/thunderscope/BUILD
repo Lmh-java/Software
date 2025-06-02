@@ -112,6 +112,8 @@ py_library(
         "//software/thunderscope/robot_diagnostics:robot_error_log",
         "//software/thunderscope/robot_diagnostics:robot_info",
         "//software/thunderscope/robot_diagnostics:robot_view",
+        "//proto:import_all_protos",
+        requirement("protobuf"),
     ],
 )
 
@@ -149,6 +151,7 @@ py_library(
     name = "constants",
     srcs = ["constants.py"],
     deps = [
+        "//proto:import_all_protos",
         requirement("protobuf"),
     ],
 )

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from proto.import_all_protos import *
+from proto import *
 import software.python_bindings as tbots_cpp
 import numpy
 import math

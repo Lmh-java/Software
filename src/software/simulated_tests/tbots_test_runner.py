@@ -1,4 +1,4 @@
-from proto.import_all_protos import *
+from proto import *
 from software.logger.logger import create_logger
 from software.thunderscope.thread_safe_buffer import ThreadSafeBuffer
 from proto.ssl_gc_common_pb2 import Team

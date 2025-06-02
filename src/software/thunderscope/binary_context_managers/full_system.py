@@ -9,7 +9,7 @@ from subprocess import Popen, TimeoutExpired
 from software.thunderscope.gl.layers.gl_obstacle_layer import ObstacleList
 from software.thunderscope.proto_unix_io import ProtoUnixIO
 from software.python_bindings import *
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 from software.thunderscope.binary_context_managers.util import is_cmd_running
 

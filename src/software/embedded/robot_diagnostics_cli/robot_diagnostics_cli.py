@@ -12,7 +12,7 @@ from functools import wraps
 from typing import List, Optional
 from typing_extensions import Annotated
 from embedded_communication import EmbeddedCommunication
-from proto.import_all_protos import *
+from proto import *
 from software.embedded.constants.py_constants import (
     DEFAULT_PRIMITIVE_DURATION,
     ROBOT_MAX_ANG_SPEED_RAD_PER_S,

@@ -1,6 +1,6 @@
 import psutil as util
 from software.python_bindings import *
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 
 
