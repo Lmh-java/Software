@@ -1,6 +1,6 @@
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph.Qt import QtGui
-from proto.import_all_protos import *
+from proto import *
 from proto.ssl_gc_common_pb2 import Team as SslTeam
 from typing import Callable
 import webbrowser

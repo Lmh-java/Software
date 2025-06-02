@@ -8,7 +8,7 @@ from software.thunderscope.robot_diagnostics.motor_fault_icons.motor_fault_icon_
 from software.thunderscope.common.proto_parameter_tree_util import get_string_val
 from software.thunderscope.common.common_widgets import display_tooltip
 from typing import Any
-from proto.import_all_protos import *
+from proto import *
 
 
 class MotorFaultView(QWidget):

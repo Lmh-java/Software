@@ -6,7 +6,7 @@ import sys
 import os
 
 import pytest
-from proto.import_all_protos import *
+from proto import *
 
 
 from software.simulated_tests import validation

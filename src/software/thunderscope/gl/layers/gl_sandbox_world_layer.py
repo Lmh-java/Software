@@ -1,6 +1,6 @@
 import math
 from typing import Optional
-from proto.import_all_protos import *
+from proto import *
 from pyqtgraph.Qt.QtCore import *
 from pyqtgraph.Qt.QtGui import *
 from pyqtgraph.opengl import *

@@ -1,7 +1,7 @@
 from typing import Callable
 from pyqtgraph.Qt import QtGui
 from pyqtgraph.Qt.QtWidgets import *
-from proto.import_all_protos import *
+from proto import *
 from software.thunderscope.thread_safe_buffer import ThreadSafeBuffer
 from software.thunderscope.constants import (
     CameraView,

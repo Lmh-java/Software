@@ -1,4 +1,4 @@
-from proto.import_all_protos import *
+from proto import *
 from software.field_tests.field_test_fixture import *
 
 from software.simulated_tests.simulated_test_fixture import *

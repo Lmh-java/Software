@@ -1,6 +1,6 @@
 from software.py_constants import *
 import software.python_bindings as tbots
-from proto.import_all_protos import *
+from proto import *
 from software.simulated_tests.validation import (
     Validation,
     create_validation_types,

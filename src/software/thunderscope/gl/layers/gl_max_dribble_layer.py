@@ -6,7 +6,7 @@ from software.thunderscope.gl.layers.gl_layer import GLLayer
 from software.thunderscope.gl.graphics.gl_circle import GLCircle
 from software.thunderscope.gl.graphics.gl_polygon import GLPolygon
 import software.python_bindings as tbots_cpp
-from proto.import_all_protos import *
+from proto import *
 
 from pyqtgraph.Qt import QtGui
 from software.thunderscope.util import *

@@ -5,7 +5,7 @@ import base64
 import os
 import gzip
 import glob
-from proto.import_all_protos import *
+from proto import *
 from extlibs.er_force_sim.src.protobuf.world_pb2 import *
 from software.py_constants import *
 

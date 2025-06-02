@@ -1,4 +1,4 @@
-from proto.import_all_protos import *
+from proto import *
 from embedded_data import EmbeddedData
 from google.protobuf.message import Message
 from software.embedded.constants.py_constants import get_estop_config, EstopMode

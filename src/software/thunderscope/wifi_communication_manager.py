@@ -1,6 +1,6 @@
 from typing import Any, Callable, Self, Type
 
-from proto.import_all_protos import *
+from proto import *
 from software.logger.logger import create_logger
 import software.python_bindings as tbots_cpp
 from software.py_constants import *

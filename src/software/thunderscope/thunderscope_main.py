@@ -17,7 +17,7 @@ assert protobuf_impl_type == "upb", (
 
 from software.thunderscope.thunderscope import Thunderscope
 from software.thunderscope.binary_context_managers import *
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 from software.thunderscope.robot_communication import RobotCommunication
 from software.thunderscope.wifi_communication_manager import WifiCommunicationManager

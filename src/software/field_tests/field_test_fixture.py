@@ -5,7 +5,7 @@ import threading
 
 import pytest
 import argparse
-from proto.import_all_protos import *
+from proto import *
 
 from software.simulated_tests import validation
 from software.thunderscope.constants import EstopMode

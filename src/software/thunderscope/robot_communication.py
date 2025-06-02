@@ -6,7 +6,7 @@ import os
 import software.python_bindings as tbots_cpp
 
 from google.protobuf.message import Message
-from proto.import_all_protos import *
+from proto import Ball
 from software.logger.logger import create_logger
 from software.thunderscope.thread_safe_buffer import ThreadSafeBuffer
 from software.thunderscope.proto_unix_io import ProtoUnixIO

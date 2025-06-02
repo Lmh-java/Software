@@ -1,7 +1,7 @@
 import pytest
 import math
 import software.python_bindings as tbots_cpp
-from proto.import_all_protos import *
+from proto import *
 from software.simulated_tests.simulated_test_fixture import (
     pytest_main,
 )

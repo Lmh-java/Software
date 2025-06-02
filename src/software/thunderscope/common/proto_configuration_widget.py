@@ -1,12 +1,12 @@
 import os
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import MILLISECONDS_PER_SECOND
 from software.thunderscope.constants import ProtoConfigurationConstant
 import logging
 from pyqtgraph.Qt.QtCore import QTimer
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph import parametertree
-from proto.import_all_protos import *
+from proto import *
 from software.thunderscope.common import proto_parameter_tree_util
 from typing import Any, Callable
 from PyQt6.QtWidgets import *

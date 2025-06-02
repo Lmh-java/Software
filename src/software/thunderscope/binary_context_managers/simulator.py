@@ -6,7 +6,7 @@ import time
 
 from subprocess import Popen
 from software.python_bindings import *
-from proto.import_all_protos import *
+from proto import *
 from software.py_constants import *
 from software.thunderscope.proto_unix_io import ProtoUnixIO
 from extlibs.er_force_sim.src.protobuf.world_pb2 import SimulatorState

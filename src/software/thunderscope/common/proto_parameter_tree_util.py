@@ -1,7 +1,8 @@
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph import parametertree
 from thefuzz import fuzz
-from proto.import_all_protos import *
+from proto import *
+from proto.parameters_pb2 import bounds
 import netifaces
 
 

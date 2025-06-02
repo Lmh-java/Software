@@ -1,6 +1,6 @@
 import math
 from software.py_constants import *
-from proto.import_all_protos import *
+from proto import *
 
 from software.simulated_tests.validation import (
     create_validation_types,

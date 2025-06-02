@@ -1,7 +1,7 @@
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph.Qt.QtCore import Qt
 from pyqtgraph.Qt import QtGui
-from proto.import_all_protos import *
+from proto import *
 from datetime import datetime
 import textwrap
 import software.thunderscope.robot_diagnostics.robot_error_log_icons.error_log_constants as error_constants

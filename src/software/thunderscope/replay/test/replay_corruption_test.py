@@ -18,7 +18,7 @@ import random
 import shutil
 import gzip
 import os
-from proto.import_all_protos import *
+from proto import *
 from google.protobuf.message import Message
 import base64
 from software.py_constants import *

@@ -5,7 +5,7 @@ from pyqtgraph.opengl import *
 
 import time
 
-from proto.import_all_protos import *
+from proto import *
 
 from software.py_constants import *
 from software.thunderscope.constants import Colors, DepthValues

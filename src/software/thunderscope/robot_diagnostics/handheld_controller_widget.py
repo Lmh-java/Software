@@ -3,7 +3,7 @@ import numpy
 import evdev
 from evdev import ecodes
 
-from proto.import_all_protos import *
+from proto import *
 from pyqtgraph.Qt.QtWidgets import *
 from pyqtgraph.Qt import QtCore
 
