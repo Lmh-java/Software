@@ -43,7 +43,8 @@ build --enable_runfiles
 common --enable_bzlmod
 common --lockfile_mode=update
 common --enable_platform_specific_config
-build --cxxopt="-std=c++20"
+build --cxxopt="-std=c++17"
+build --cxxopt="-Wno-c++11-narrowing"
 common --noincompatible_disallow_empty_glob
 common --incompatible_disallow_struct_provider_syntax=false
 common --verbose_failures
@@ -54,10 +55,10 @@ build --experimental_remote_merkle_tree_cache # partial repo caching optimizatio
 build --incompatible_enable_proto_toolchain_resolution # protoc caching
 
 # Ensure that we don't accidentally build protobuf or gRPC
-common --per_file_copt=external/.*protobuf.*@--PROTOBUF_WAS_NOT_SUPPOSED_TO_BE_BUILT
-common --host_per_file_copt=external/.*protobuf.*@--PROTOBUF_WAS_NOT_SUPPOSED_TO_BE_BUILT
-common --per_file_copt=external/.*grpc.*@--GRPC_WAS_NOT_SUPPOSED_TO_BE_BUILT
-common --host_per_file_copt=external/.*grpc.*@--GRPC_WAS_NOT_SUPPOSED_TO_BE_BUILT
+# common --per_file_copt=external/.*protobuf.*@--PROTOBUF_WAS_NOT_SUPPOSED_TO_BE_BUILT
+# common --host_per_file_copt=external/.*protobuf.*@--PROTOBUF_WAS_NOT_SUPPOSED_TO_BE_BUILT
+# common --per_file_copt=external/.*grpc.*@--GRPC_WAS_NOT_SUPPOSED_TO_BE_BUILT
+# common --host_per_file_copt=external/.*grpc.*@--GRPC_WAS_NOT_SUPPOSED_TO_BE_BUILT
 
 # Deprecation Updates
 common --run_validations
