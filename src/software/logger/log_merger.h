@@ -42,9 +42,9 @@ class LogMerger
      * map, and returns them as strings
      */
     std::list<g3::LogMessage> _getOldMessages(
-        std::chrono::_V2::system_clock::time_point current_time);
+        std::chrono::system_clock::time_point current_time);
 
-    const std::chrono::_V2::system_clock::duration LOG_MERGE_DURATION =
+    const std::chrono::system_clock::duration LOG_MERGE_DURATION =
         std::chrono::seconds(2);
 
    private:
@@ -55,10 +55,10 @@ class LogMerger
     {
         g3::LogMessage log;
         std::string msg;
-        std::chrono::_V2::system_clock::time_point timestamp;
+        std::chrono::system_clock::time_point timestamp;
 
         Message(g3::LogMessage &log, std::string msg,
-                std::chrono::_V2::system_clock::time_point timestamp)
+                std::chrono::system_clock::time_point timestamp)
             : log(log), msg(msg), timestamp(timestamp)
         {
         }
@@ -68,7 +68,7 @@ class LogMerger
         repeat_map;  // maps string messages to their number of repeats for fast access
     std::list<Message> message_list;  // used to keep track of time order for messages
 
-    std::chrono::_V2::system_clock::duration
+    std::chrono::system_clock::duration
         passed_time;  // for testing, time passed manually
 
     bool enable_merging;

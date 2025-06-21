@@ -462,7 +462,6 @@ def _linux_gcc_impl(ctx):
                     "-lpthread",
                     "-ldl",
                     "-lrt",
-                    "-lstdc++fs",
                 ])],
             ),
         ],

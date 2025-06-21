@@ -7,9 +7,9 @@ from software.thunderscope.robot_diagnostics.chicker_widget import (
     ChickerWidget,
     ChickerCommandMode,
 )
-from software.thunderscope.robot_diagnostics.handheld_controller_widget import (
-    HandheldControllerWidget,
-)
+# from software.thunderscope.robot_diagnostics.handheld_controller_widget import (
+#     HandheldControllerWidget,
+# )
 from software.thunderscope.robot_diagnostics.drive_and_dribbler_widget import (
     DriveAndDribblerWidget,
 )
@@ -38,7 +38,7 @@ class DiagnosticsWidget(QScrollArea):
         self.drive_dribbler_widget = DriveAndDribblerWidget(self.proto_unix_io)
         self.chicker_widget = ChickerWidget(self.proto_unix_io)
 
-        self.handheld_controller_widget = HandheldControllerWidget()
+        # self.handheld_controller_widget = HandheldControllerWidget()
         self.handheld_controller_widget.kick_button_pressed.connect(
             lambda: self.chicker_widget.send_command_and_timeout(
                 ChickerCommandMode.KICK

@@ -5,7 +5,7 @@
 
 #include <chrono>
 #include <ctime>
-#include <experimental/filesystem>
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <optional>
@@ -31,7 +31,7 @@ ProtoLogger::ProtoLogger(const std::string& log_path,
     std::stringstream ss;
     ss << std::put_time(&tm, REPLAY_FILE_TIME_FORMAT.data());
     log_folder_ = log_path_ + "/" + REPLAY_FILE_PREFIX + ss.str() + "/";
-    std::experimental::filesystem::create_directories(log_folder_);
+    std::filesystem::create_directories(log_folder_);
 
     // Start logging in a separate thread
     log_thread_ = std::thread(&ProtoLogger::logProtobufs, this);
