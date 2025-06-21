@@ -176,7 +176,7 @@ class Gamecontroller:
         self.receive_referee_command = tbots_cpp.SSLRefereeProtoListener(
             Gamecontroller.REFEREE_IP,
             self.referee_port,
-            "lo",
+            "lo0",
             __send_referee_command,
             True,
         )
