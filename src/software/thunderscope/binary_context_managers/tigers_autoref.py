@@ -229,7 +229,7 @@ class TigersAutoref(TimeProvider):
             autoref_cmd += " --ci"
 
         if self.suppress_logs:
-            with open(os.devnull, "w") as fp:
+            with open("/tmp/tbots/autoref.log", "w+") as fp:
                 self.tigers_autoref_proc = Popen(
                     autoref_cmd.split(" "), stdout=fp, stderr=fp
                 )

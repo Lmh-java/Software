@@ -73,7 +73,7 @@ class Gamecontroller:
         command += ["-ciAddress", f"localhost:{self.ci_port}"]
 
         if self.suppress_logs:
-            with open(os.devnull, "w") as fp:
+            with open("/tmp/tbots/gamecontroller.log", "w+") as fp:
                 self.gamecontroller_proc = Popen(command, stdout=fp, stderr=fp)
 
         else:
@@ -176,7 +176,7 @@ class Gamecontroller:
         self.receive_referee_command = tbots_cpp.SSLRefereeProtoListener(
             Gamecontroller.REFEREE_IP,
             self.referee_port,
-            "lo0",
+            "en0",
             __send_referee_command,
             True,
         )
