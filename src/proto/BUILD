@@ -1,4 +1,3 @@
-load("@nanopb//extra/bazel:nanopb_cc_proto_library.bzl", "cc_nanopb_proto_library")
 load("@protobuf//bazel:proto_library.bzl", "proto_library")
 load("@protobuf//bazel:py_proto_library.bzl", "py_proto_library")
 load("//starlark/nanopb:nanopb.bzl", "nanopb_proto_library")
